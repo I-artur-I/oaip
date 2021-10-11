@@ -50,7 +50,8 @@ int main() {
 	
 	delete[] m1;
 	delete[] m2;
-
+	m1 = NULL;
+	m2 = NULL;
 	system("pause");
 	return 0;
 }

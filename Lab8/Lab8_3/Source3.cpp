@@ -52,6 +52,7 @@ int main() {
 	}
 
 	delete[] massiv;
+	massiv = NULL;
 	system("pause");
 	return 0;
 }
