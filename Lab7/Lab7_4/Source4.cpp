@@ -18,7 +18,8 @@ int main() {
 	}
 	std::cout << "Ваш массив\n";
 
-	for (int i = 0; i < stroki; i++) {
+	for (int i = 0; i < stroki; i++) 
+	{
 		for (int j = 0; j < stolbch; j++) {
 			std::cout << massiv[i][j] << " ; ";
 		}

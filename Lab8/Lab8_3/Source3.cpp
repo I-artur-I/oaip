@@ -10,6 +10,11 @@ int main() {
 	double* massiv = new double[length]{-4.26, 5.66, -2.70, 10.16, 1.12, -7.14, -5.16, 4.26, 0.99, 3.15};
 	double result = 0;
 
+	if (massiv == NULL) {
+		std::cout << "Ошибка выделения памяти";
+		return 0;
+	}
+
 
 	for (int i = 0; i < length; i++) {
 		if (massiv[i] > 0) {
@@ -55,4 +60,4 @@ int main() {
 	massiv = NULL;
 	system("pause");
 	return 0;
-}
+}	

@@ -10,6 +10,11 @@ int main() {
 	int *m1 = new int[l1];
 	int *m2 = new int[l2];
 
+	if (m1 == NULL || m2 == NULL) {
+		std::cout << "Ошибка выделения памяти";
+		return 0;
+	}
+
 	std::cout << "Введи значения для первого массива\n";
 	for (int i = 0; i < l1; i++) {
 		std::cin >> m1[i];

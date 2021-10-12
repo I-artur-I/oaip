@@ -11,6 +11,11 @@ int main() {
 	std::cin >> length;
 	int* massiv = new int[length];
 
+	if (massiv == NULL) {
+		std::cout << "Ошибка выделения памяти";
+		return 0;
+	}
+
 	std::cout << "Введи значения для массива\n";
 	for (int i = 0; i < length; i++) {
 		std::cin >> massiv[i];

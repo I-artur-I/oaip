@@ -24,13 +24,13 @@ int main() {
 		std::cout << "\n";
 	}
 
-	int min= 99999999999999;
+	int min = 99999999999999;//////////////////////
 	for (int i = 0; i < stroki; i++) {
 		int sum = 0;
 		for (int j = 0; j < stolbch; j++) {
 			sum += massiv[i][j];
 		}
-		min = min(min, sum);
+		min = min(min, sum);//////////////////////
 	}
 
 	std::cout << "Минимум среди всех сумм строк равен" << min <<"\n";
