@@ -19,7 +19,7 @@ int main() {
 	int sum = 0;
 	for (int i = 0; i < l; i++) {
 		if (m[i] < 0) {
-			sum += m[i];
+			sum += *(m+i);
 		}
 	}
 	std::cout << "Сумма отрицательных элементов равна " << sum;
@@ -28,9 +28,9 @@ int main() {
     int nm[nl][nw];
 	for (int i = 0; i < nl; i ++) {
 		for (int j = 0; j < nw; j++) {
-			nm[i][j] = m[i * nw + j];
+			*(*(nm + i) + j) = *(m + (i * nw + j));
 		}
-		std::cout << "Строка " << i + 1 << " " << &nm[i] <<"\n";
+		std::cout << "Строка " << i + 1 << " " << nm+i <<"\n";
 	}
 
 	system("pause");

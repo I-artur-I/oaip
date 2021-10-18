@@ -14,7 +14,7 @@ int main() {
 	for (int i = 0; i < l; i++) {
 		for (int ii = 0; ii < ll; ii++) {
 			for (int iii = 0; iii < lll; iii++) {
-				m[i][ii][iii] = 65 + rand() % 26;
+				*(*(*(m+i)+ii)+iii) = 65 + rand() % 26;
 			}
 		}
 	}
@@ -24,7 +24,7 @@ int main() {
 				if (m[i][ii][iii] == 'W') {
 					std::cout << "[" << i << "][" << ii << "]";
 					for (iii = 0; iii < lll; iii++) {
-						std::cout << m[i][ii][iii];
+						std::cout << *(*(*(m + i) + ii) + iii);
 					}
 					std::cout << "\n";
 					break;
