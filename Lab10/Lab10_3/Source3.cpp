@@ -8,7 +8,7 @@ int main() {
 	srand(time(NULL));
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
-	//65-90
+		
 	const int l = 7, ll = 5, lll = 8;
 	char m[l][ll][lll];
 	for (int i = 0; i < l; i++) {

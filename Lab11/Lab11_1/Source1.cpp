@@ -2,28 +2,8 @@
 #include <Windows.h>
 #include <cmath>
 
-bool zadanie1(int mas[], int masL, int num) {
-	for (int i = 0; i < masL; i += 2) {
-		if (mas[i] % num != 0) {
-			return false;
-		}
-	}
-	return true;
-}
-
-int zadanie2(int mas[], int masL, int* sum, int& pro) {
-	int s = 0;
-	for (int i = 0; i < masL; i ++) {
-		if (mas[i] % 6 == 0) {
-			*sum += mas[i];
-			pro *= mas[i];
-		}
-		if (mas[i] < 0) {
-			s++;
-		}
-	}
-	return s;
-}
+bool zadanie1(int mas[], int masL, int num);
+int zadanie2(int mas[], int masL, int* sum, int& pro);
 
 int main() {
 	SetConsoleOutputCP(1251);
@@ -58,4 +38,27 @@ int main() {
 	std::cout << "¬ массиве " << zadanie2(mas, l, &sum, pro) << " отрицательных чисел, сумма всех элементов, значение которых кратных 6, равна " << sum << ", а произведение равно " << pro << "\n";
 	system("pause");
 	return 0;
+}
+
+bool zadanie1(int mas[], int masL, int num) {
+	for (int i = 0; i < masL; i += 2) {
+		if (mas[i] % num != 0) {
+			return false;
+		}
+	}
+	return true;
+}
+
+int zadanie2(int mas[], int masL, int* sum, int& pro) {
+	int s = 0;
+	for (int i = 0; i < masL; i++) {
+		if (mas[i] % 6 == 0) {
+			*sum += mas[i];
+			pro *= mas[i];
+		}
+		if (mas[i] < 0) {
+			s++;
+		}
+	}
+	return s;
 }
