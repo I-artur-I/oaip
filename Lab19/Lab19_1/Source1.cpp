@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <iostream>
+#include <iostream> 
 
 struct Bisnesman
 {
@@ -21,17 +21,17 @@ void printBisnesman(Bisnesman* bisnesman) {
 }
 
 void scanBisnesman(Bisnesman* bisnesman) {
-	std::cout << "Ââåäèòå âîçðàñò: ";
+	std::cout << "aÃ¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã®Ã§ÄŸÃ Ã±Ã²: ";
 	std::cin >> bisnesman->age;
-	std::cout << "Ââåäèòå êàïèòàë: ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ Ã¯Ã¨Ã²Ã Ã«: ";
 	std::cin >> bisnesman->money;
-	std::cout << "Ââåäèòå âàëþòó êàïèòàëà(1 ñèìâîë): ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã Ã«ÅŸÃ²Ã³ ÃªÃ Ã¯Ã¨Ã²Ã Ã«Ã (1 Ã±Ã¨Ã¬Ã¢Ã®Ã«): ";
 	std::cin >> bisnesman->typeMoney;
-	std::cout << "Æèâ ëè(0 - íåò, 1 - äà): ";
+	std::cout << "Ã†Ã¨Ã¢ Ã«Ã¨(0 - Ã­Ã¥Ã², 1 - Ã¤Ã ): ";
 	std::cin >> bisnesman->isLive;
-	std::cout << "Ââåäèòå íîìåð ïåðâîãî òåëåôîíà: ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥ÄŸ Ã¯Ã¥ÄŸÃ¢Ã®Ã£Ã® Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã : ";
 	std::cin >> bisnesman->phone[0];
-	std::cout << "Ââåäèòå íîìåð âòîðîãî òåëåôîíà: ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥ÄŸ Ã¢Ã²Ã®ÄŸÃ®Ã£Ã® Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã : ";
 	std::cin >> bisnesman->phone[1];
 }
 
@@ -39,8 +39,8 @@ int main() {
 	system("chcp 1251");
 	int k = 0;
 	do {
-		std::cout << "1 - Ââåñòè òåêñò â ôàéë\n2 - Âûâåñòè òåêñò èç ôàéëû\n3 - Ââåñòè ìàññèâ â ôàéë\n4 - Âûâåñòè ìàññèâ èç ôàéëû\n5 - Äîáàâèòü ñòðóêòóðó\n6 - Âûâåñòè ñòðóêòóðû\n7 - Äîáàâèòü ñòðóêòóðó(bin)\n8 - Âûâåñòè ñòðóêòóðû(bin)\n9 - Çàêîí÷èòü ïðîãðàììó\n";
-		std::cout << "Âûáåðèòå ìåíþ: ";
+		std::cout << "1 - Ã‚Ã¢Ã¥Ã±Ã²Ã¨ Ã²Ã¥ÃªÃ±Ã² Ã¢ Ã´Ã Ã©Ã«\n2 - Ã‚Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã²Ã¥ÃªÃ±Ã² Ã¨Ã§ Ã´Ã Ã©Ã«Ã»\n3 - Ã‚Ã¢Ã¥Ã±Ã²Ã¨ Ã¬Ã Ã±Ã±Ã¨Ã¢ Ã¢ Ã´Ã Ã©Ã«\n4 - Ã‚Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã¬Ã Ã±Ã±Ã¨Ã¢ Ã¨Ã§ Ã´Ã Ã©Ã«Ã»\n5 - Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã±Ã²ÄŸÃ³ÃªÃ²Ã³ÄŸÃ³\n6 - Ã‚Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã±Ã²ÄŸÃ³ÃªÃ²Ã³ÄŸÃ»\n7 - Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã±Ã²ÄŸÃ³ÃªÃ²Ã³ÄŸÃ³(bin)\n8 - Ã‚Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã±Ã²ÄŸÃ³ÃªÃ²Ã³ÄŸÃ»(bin)\n9 - Ã‡Ã ÃªÃ®Ã­Ã·Ã¨Ã²Ã¼ Ã¯ÄŸÃ®Ã£ÄŸÃ Ã¬Ã¬Ã³\n";
+		std::cout << "Ã‚Ã»Ã¡Ã¥ÄŸÃ¨Ã²Ã¥ Ã¬Ã¥Ã­ÅŸ: ";
 		std::cin >> k;
 		switch (k)
 		{
@@ -48,11 +48,11 @@ int main() {
 		{
 			char s[100];
 			std::cin.ignore();
-			std::cout << "\nÂâåäèòå òåêñò(100 ñèìâîëîâ):\n";
+			std::cout << "\nÃ‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã²Ã¥ÃªÃ±Ã²(100 Ã±Ã¨Ã¬Ã¢Ã®Ã«Ã®Ã¢):\n";
 			std::cin.getline(s,100);
 			FILE* file = fopen("./ChernyakovVlad.txt", "wt");
 			if (file == NULL) {
-				std::cout << "Îøèáêà ôàéëà\n";
+				std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã´Ã Ã©Ã«Ã \n";
 				break;
 			}
 			for (int i = 0; s[i] != NULL; i++) {
@@ -66,7 +66,7 @@ int main() {
 			std::cout << "\n";
 			FILE* file = fopen("./ChernyakovVlad.txt", "rt");
 			if (file == NULL) {
-				std::cout << "Îøèáêà ôàéëà\n";
+				std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã´Ã Ã©Ã«Ã \n";
 				break;
 			}
 			char c = fgetc(file);
@@ -80,15 +80,15 @@ int main() {
 			break;
 		case 3:
 		{
-			std::cout << "\nÂâåäèòå ðàçìåð ìàññèâà:\n";
+			std::cout << "\nÃ‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÄŸÃ Ã§Ã¬Ã¥ÄŸ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã :\n";
 			int n;
 			std::cin >> n;
 			FILE* file = fopen("./ChernyakovVlad0.txt", "wt");
 			if (file == NULL) {
-				std::cout << "Îøèáêà ôàéëà\n";
+				std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã´Ã Ã©Ã«Ã \n";
 				break;
 			}
-			std::cout << "Ââåäèòå ìàññèâ:\n";
+			std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¬Ã Ã±Ã±Ã¨Ã¢:\n";
 			for (int i = 0; i < n; i++) {
 				int buf;
 				std::cin >> buf;
@@ -100,10 +100,10 @@ int main() {
 			break;
 		case 4:
 		{
-			std::cout << "\nÝëåìåíòû ìàññèâà:\n";
+			std::cout << "\nÄ°Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã» Ã¬Ã Ã±Ã±Ã¨Ã¢Ã :\n";
 			FILE* file = fopen("./ChernyakovVlad0.txt", "rt");
 			if (file == NULL) {
-				std::cout << "Îøèáêà ôàéëà\n";
+				std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã´Ã Ã©Ã«Ã \n";
 				break;
 			}
 			int x=0;
@@ -122,7 +122,7 @@ int main() {
 			scanBisnesman(&bisnesman);
 			FILE* file = fopen("./ChernyakovVlad1.txt", "at");
 			if (file == NULL) {
-				std::cout << "Îøèáêà ôàéëà\n";
+				std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã´Ã Ã©Ã«Ã \n";
 				break;
 			}
 			
@@ -135,10 +135,10 @@ int main() {
 		case 6:
 		{
 			Bisnesman bisnesman = {0,0.0,'r',0,23,23};
-			std::cout << "\nÑòðóêòóðû:\n";
+			std::cout << "\nÃ‘Ã²ÄŸÃ³ÃªÃ²Ã³ÄŸÃ»:\n";
 			FILE* file = fopen("./ChernyakovVlad1.txt", "rt");
 			if (file == NULL) {
-				std::cout << "Îøèáêà ôàéëà\n";
+				std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã´Ã Ã©Ã«Ã \n";
 				break;
 			}
 			
@@ -157,7 +157,7 @@ int main() {
 			scanBisnesman(&bisnesman);
 			FILE* file = fopen("./ChernyakovVlad2.bin", "ab");
 			if (file == NULL) {
-				std::cout << "Îøèáêà ôàéëà\n";
+				std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã´Ã Ã©Ã«Ã \n";
 				break;
 			}
 
@@ -171,10 +171,10 @@ int main() {
 		case 8:
 		{
 			Bisnesman bisnesman = {0,0.0,'\0',0,0,0};
-			std::cout << "\nÑòðóêòóðû:\n";
+			std::cout << "\nÃ‘Ã²ÄŸÃ³ÃªÃ²Ã³ÄŸÃ»:\n";
 			FILE* file = fopen("./ChernyakovVlad2.bin", "rb");
 			if (file == NULL) {
-				std::cout << "Îøèáêà ôàéëà\n";
+				std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã´Ã Ã©Ã«Ã \n";
 				break;
 			}
 			fread(&bisnesman, sizeof(Bisnesman),1,file);
@@ -190,7 +190,7 @@ int main() {
  			system("pause");
 			break;
 		default:
-			std::cout << "Âûáðàííûé ïóíêò ìåíþ íå ðàñïîçíàí";
+			std::cout << "Ã‚Ã»Ã¡ÄŸÃ Ã­Ã­Ã»Ã© Ã¯Ã³Ã­ÃªÃ² Ã¬Ã¥Ã­ÅŸ Ã­Ã¥ ÄŸÃ Ã±Ã¯Ã®Ã§Ã­Ã Ã­";
 			break;
 		}
 	} while (k != 9);
